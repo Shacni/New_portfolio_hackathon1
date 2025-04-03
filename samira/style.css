@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c4defa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f3c88;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 10%;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  flex: 0 0 auto;
+}
+
+
+.navbar .logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+.nav-links li a {
+  text-decoration: solid;
+  color: #f6f3f3;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s , transform 0.3s;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  align-items:right;
+}
+
+.nav-links li a:hover {
+  color: #c4defa;
+  transform: scale(1.1);
+  background-color: #1f3c88;
+  border-radius: 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 150px;
+  background: linear-gradient(to right, #4a90e2, #1f3c88);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Sections */
+.section-container {
+  padding: 40px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1f3c88;
+}
+
+/* Profile */
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-content {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+.profile-content {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-width:1200px;
+}
+
+.profile h2 {
+  color: #1f3c88;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  padding: 2rem;
+  background-color: #c4defa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(12, 83, 122, 0.1);
+}
+.profile-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+
+.profile-text {
+  text-align: left;
+}
+
+.profile-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.about {
+  background-color: #c4defa; /* Sets the background color */
+  padding: ; /* Adds spacing inside the section */
+  text-align: center; /* Centers the text horizontally */
+  border-radius: 10px; /* Adds rounded corners */
+}
+
+.about-container {
+  max-width: 800px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the container horizontally */
+  background-color: #c4defa;
+}
+
+.about h2 {
+  font-size: 28px; /* Sets the font size for the heading */
+  color: #333; /* Sets the text color */
+  margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.about p {
+  font-size: 18px; /* Sets the font size for the paragraph */
+  color: #555; /* Sets the text color */
+  line-height: 1.6; /* Improves readability with line spacing */
+}
+
+
+
+  /* Services/Skills section */
+  .services {
+    background-color: #c4defa;
+  }
+
+  .services .section-container p {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0 auto; /* Ensures proper centering */
+    display: flex; /* Enables flexbox for vertical centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100%; /* Ensures the container has height for vertical centering */
+}
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 2rem;
+  }
+  
+  .services-list li {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .services-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #1641bf;
+    color: white;
+  }
+
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size:1rem;
+  transion: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #1f3c88;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.submit-btn {
+  padding: 1rem 2rem;
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white; /* Icon background */
+  border-radius: 50%; /* Makes it circular */
+  text-decoration: none;
+  color: #14243e;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #3476b8; /* Change background on hover */
+  color: #cdd2da;
+}
+.social-links img {
+width: 40px; /* Adjust size */
+height: 40px;
+border-radius: 25%; /* Makes it circular */
+transition: 0.3s ease;
+}
+
+.social-links a:hover img {
+  background-color: #094a95; /* Change background on hover */
+  filter: brightness(90%); /* Makes it dim on hover */
+}
+
+
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
